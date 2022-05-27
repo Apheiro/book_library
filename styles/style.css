@@ -7,30 +7,65 @@
 }
 
 :root{
-    --color: #ffed9b;
+    --color: #949494;
 }
 
-.formContainer{
+.formBackground{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.397);
     z-index: 2;
     display: none;
 }
+.showFormBackground{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInBackground 0.25s;
+}
 
 .form{
+    position: absolute;
     background-color: #303030;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 383px;
     height: 536px;
     border-radius: 15px;
+    z-index: 3;
+}
+
+.showForm{
+    display: flex;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeInBackground {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
 }
 
 .formContent{
