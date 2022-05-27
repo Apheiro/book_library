@@ -1,0 +1,38 @@
+
+.checkbox {
+    display: none;
+}
+
+.checkbox_box {
+    width: 26px;
+    height: 26px;
+    border: unset;
+    background-color: #232323;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.2s;
+    user-select: none;
+}
+
+.checkbox_box:hover {
+    border-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+.checkbox_box::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    background: rgb(255, 208, 0);
+    transform: scale(0);
+    transition: transform 0.1s;
+}
+
+.checkbox:checked+.checkbox_box::after {
+    transform: scale(1);
+}
