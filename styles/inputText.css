@@ -1,9 +1,10 @@
 input[type='text'] {
     background-color: #474747;
     border: unset;
-    height: 30px;
+    height: 35px;
     padding: 0px 10px;
     border-radius: 7px;
+    font-size: 18px;
 }
 
 input:-webkit-autofill,

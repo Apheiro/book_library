@@ -6,6 +6,10 @@
     color: #F3E9DC;
 }
 
+:root{
+    --color: #ffed9b;
+}
+
 .formContainer{
     position: absolute;
     display: flex;
@@ -15,6 +19,7 @@
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.397);
     z-index: 2;
+    display: none;
 }
 
 .form{
@@ -39,7 +44,6 @@
 }
 
 .formContent legend{
-    color: #F3E9DC;
     font-size: 27px;
     font-weight: bold;
 }
@@ -76,10 +80,9 @@ main{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: hsla(0, 0%, 0%, 0.15) 0px 0px 40px;
-    
 }
 
-.addButton{
+.addButtonMenu{
     background-color: #303030;
     width: 222px;
     height: 66px;
@@ -95,8 +98,25 @@ main{
     transition: transform 0.2s;
 }
 
-.addButton:hover {
+.addButtonMenu:hover {
     transform: scale(1.05);
+}
+
+.addBtnSubmit {
+    background-color: var(--color);
+    width: 153px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #303030;
+    border: unset;
+    transition: transform 0.25s;
+    margin-top: 50px;
+}
+
+.addBtnSubmit:hover {
+    transform: scale(1.1);
 }
 
 .libraryNavContainer{
@@ -144,5 +164,3 @@ main{
     align-items: center;
 }
 
-.libraryBooks{  
-}
