@@ -16,27 +16,47 @@
     <title>Book Library</title>
 </head>
 <body>
-    <div id="formBackground" class="formBackground">
-        <form class="form" id="form">
-            <div class="formContent">
-                <legend>Add your book!</legend>
-                <input type="text" id="title" name="title" placeholder="Title" required>
-                <input type="text" id="author" name="author" placeholder="Author" required>
-                <input type="text" id="pages" name="pages" placeholder="Number of pages" required>
-                <label class="clickInputs">
-                    <p>Color</p>
-                    <input type="color" name="color" id="color" value="#949494">
-                </label>
-                <label class="clickInputs">
-                    <p>Read</p>
-                    <input type="checkbox" id="read" name="read" class="checkbox"><span class="checkboxStyle"></span>
-                </label>
-            </div>
-            <div>
-                <button id="addBtnSubmit" class="addBtnSubmit">Add book</button>
-            </div>
-        </form>
-    </div>
+
+    <div id="formBackground" class="formBackground"></div>
+    <form class="form" id="form">
+        <div class="formContent">
+            <legend>Add your book!</legend>
+            <input type="text" id="title" name="title" placeholder="Title" required>
+            <input type="text" id="author" name="author" placeholder="Author" required>
+            <input type="text" inputmode="numeric" id="pages" name="pages" placeholder="Number of pages" required>
+            <label class="clickInputs">
+                <p>Color</p>
+                <input type="color" name="color" id="color" value="#949494">
+            </label>
+            <label class="clickInputs">
+                <p>Read</p>
+                <input type="checkbox" id="read" name="read" class="checkbox"><span class="checkboxStyle"></span>
+            </label>
+        </div>
+        <div>
+            <button id="addBtnSubmit" class="addBtnSubmit">Add book</button>
+        </div>
+    </form>
+    <form class="form" id="editForm">
+        <div class="formContent">
+            <legend>Edit your book!</legend>
+            <input type="text" id="titleEdit" name="titleEdit" placeholder="Title" required>
+            <input type="text" id="authorEdit" name="authorEdit" placeholder="Author" required>
+            <input type="text" inputmode="numeric" id="pagesEdit" name="pagesEdit" placeholder="Number of pages" required>
+            <label class="clickInputs">
+                <p>Color</p>
+                <input type="color" name="colorEdit" id="colorEdit" value="#949494">
+            </label>
+            <label class="clickInputs">
+                <p>Read</p>
+                <input type="checkbox" id="readEdit" name="readEdit" class="checkbox"><span class="checkboxStyle"></span>
+            </label>
+        </div>
+        <div>
+            <button id="addBtnSubmitEdit" class="addBtnSubmit">Edit book</button>
+        </div>
+    </form>
+
     <main>
 
         <header class="libraryNavContainer">
@@ -66,9 +86,7 @@
 
             </nav>
         </header>
-        <section id="library" class="library">
-            
-        </section>
+        <section id="library" class="library"></section>
     </main>
 </body>
 </html>
