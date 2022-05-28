@@ -35,7 +35,7 @@
     width: 383px;
     height: 536px;
     border-radius: 15px;
-    z-index: 3;
+    z-index: 2;
 }
 
 .showForm{
@@ -197,7 +197,7 @@ main{
 
 .library{
     background-color: #252525;
-    
+    scrollbar-width: none;
     width: 100%;
     max-height: 772px;
     height: 100%;
@@ -206,6 +206,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.library::-webkit-scrollbar {
+    display: none;
 }
 
 .libraryBooks{
