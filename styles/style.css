@@ -83,16 +83,6 @@
     font-weight: bold;
 }
 
-.clickInputs{
-    display: flex;
-    align-items: center;
-    height: 35px;
-}
-.clickInputs p{
-    margin-right: 10px;
-}
-
-
 body{
     background-color: #1F1F1F;
     width: 100vw;
@@ -133,6 +123,15 @@ main{
     transition: transform 0.2s;
 }
 
+.addButtonMenuNav{
+    background-color: #252525;
+    margin-right: 25px;
+    width: 173px;
+    height: 60px;
+    font-size: 23px;
+    box-shadow: unset;
+}
+
 .addButtonMenu:hover {
     transform: scale(1.05);
 }
@@ -148,6 +147,7 @@ main{
     border: unset;
     transition: transform 0.25s;
     margin-top: 50px;
+    order: 1;
 }
 
 .addBtnSubmit:hover {
@@ -161,7 +161,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #303030;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 0px 40px;
+    box-shadow: hsla(0, 0%, 0%, 0.205) 0px 0px 40px;
     padding: 0px 50px;
     z-index: 1;
 }
@@ -183,19 +183,36 @@ main{
 .gitHub{
     transition: transform .25s;
     display: flex;
+    order: 2;
 }
 
 .gitHub:hover{
     transform: scale(1.1);
 }
 
+.buttonNavBar {
+    display: flex;
+    align-items: center;
+}
+
 .library{
     background-color: #252525;
+    
     width: 100%;
     max-height: 772px;
     height: 100%;
+    overflow-y: auto;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.libraryBooks{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 216px);;
+    grid-template-rows: repeat(auto-fill, 303px);
+    justify-content: center;
+    gap: 70px;
 }
 
