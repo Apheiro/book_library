@@ -15,14 +15,11 @@
     width: 100vw;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.397);
-    z-index: 2;
-    display: none;
-}
-.showFormBackground{
-    display: flex !important;
     justify-content: center;
     align-items: center;
-    animation: fadeInBackground 0.25s;
+    z-index: 2;
+    display: none;
+    animation: fadeInBackground 0.25s ease-in-out;
 }
 
 .form{
@@ -36,11 +33,21 @@
     height: 536px;
     border-radius: 15px;
     z-index: 2;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+    user-select: none;
 }
 
+.showFormBackground {
+    display: flex !important;
+}
 .showForm{
-    display: flex;
-    animation: fadeIn 0.5s;
+    display: flex !important;
+}
+
+.animationFadeOut{
+    animation: fadeOut 0.5s ease-in-out !important;
+    pointer-events: none;
 }
 
 @keyframes fadeInBackground {
@@ -121,6 +128,7 @@ main{
     box-shadow: hsla(0, 0%, 0%, 0.15) 0px 0px 40px;
     cursor: pointer;
     transition: transform 0.2s;
+    user-select: none;
 }
 
 .addButtonMenuNav{
@@ -172,6 +180,7 @@ main{
     align-items: center;
     width: 100%;
     height: 58px;
+    user-select: none;
 }
 
 .libraryNav h1{
@@ -220,3 +229,23 @@ main{
     gap: 70px;
 }
 
+@media (max-width: 631px) {
+    .libraryBooks{
+        grid-template-columns: repeat(auto-fill, 400px);;
+    }
+
+
+    .addButtonMenuNav{
+        position: absolute;
+        bottom: 35px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #3d3d3d;
+    }
+
+    .addButtonMenu:hover {
+        transform: scale(1.05) translate(-50%, -50%);
+        
+    }
+}
