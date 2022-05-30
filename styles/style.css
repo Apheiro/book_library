@@ -172,6 +172,7 @@ main{
     box-shadow: hsla(0, 0%, 0%, 0.205) 0px 0px 40px;
     padding: 0px 50px;
     z-index: 1;
+    position: relative;
 }
 
 .libraryNav{
@@ -234,19 +235,9 @@ main{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
     }
 
-
     .addButtonMenuNav{
         position: absolute;
-        bottom: 35px;
-        right: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-right: unset;
-    }
-
-    .addButtonMenu {
-        position: absolute;
-        bottom: 35px;
+        bottom: -765px;
         right: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -254,10 +245,10 @@ main{
         width: 173px;
         height: 60px;
         font-size: 23px;
+        margin-right: unset;
     }
 
-    .addButtonMenu:hover {
+    .addButtonMenuNav:hover {
         transform: scale(1.05) translate(-50%, -50%);
-        
     }
 }
