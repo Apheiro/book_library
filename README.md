@@ -1,13 +1,32 @@
-# book_library
+#
 
-In this project i made a book library. It is a simple application that allows you to add books.</br>
+<h1 align="center">Book library</h1>
 
-Acquired knowledge:</br>
-● How stop an event from default action</br>
-● A more deeper use and understanding for grids</br>
-● Make object constructors</br>
+![](./Preview/thumbnail.png)
 
-images preview:</br>
-![](./Preview/03-30-22-000301.png)</br>
-![](./Preview/04-30-22-000415.png)</br>
-![](./Preview/04-30-22-000456.png)
+<p align="center">
+  Book library for <a href="https://www.theodinproject.com/">The Odin Project</a>
+</p>
+
+## Demo
+
+👁️ [Live Demo](https://apheiro.github.io/book_library/)
+
+## Built with
+
+- JavaScript
+- Css
+- Html
+
+## Features
+
+- Responsive design.
+- Clean desing.
+- smooth animations.
+
+## Screenshots
+
+![](./Preview/presentation.png)
+![](./Preview/Screenshot.png)
+![](./Preview/Screenshot1.png)
+![](./Preview/Screenshot2.png)
